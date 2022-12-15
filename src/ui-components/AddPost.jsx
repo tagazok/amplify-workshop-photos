@@ -1,7 +1,6 @@
 import { useState } from "react"
 import { Storage } from "aws-amplify";
 import { v4 as uuidv4 } from 'uuid';
-import { API } from "aws-amplify";
 import { TextAreaField, Button } from '@aws-amplify/ui-react';
 import './AddPost.css';
 
