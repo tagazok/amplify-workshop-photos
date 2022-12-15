@@ -5,27 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import AddPost from './ui-components/AddPost';
 
-import {
-  createBrowserRouter,
-  RouterProvider
-} from "react-router-dom";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/add",
-    element: <AddPost />
-  },
-]);
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <nav>My Navbar</nav>
-    <RouterProvider router={router} />
+    Hello, World!
   </React.StrictMode>
 );
 
