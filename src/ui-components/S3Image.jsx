@@ -26,10 +26,16 @@ export default function S3Image(props) {
     });
 
     return (
-        <img
-            style={style}
-            src={url}
-            alt="Coucou"
-        />
+        <div>
+            {(() => {
+                if (props.id) {
+                    return <img
+                        style={style}
+                        src={url}
+                        alt="Image attached to post"
+                    />;
+                }
+            })()}
+        </div>
     );
 };
