@@ -6,7 +6,7 @@ import { TextAreaField, Button } from '@aws-amplify/ui-react';
 import './AddPost.css';
 
 export default function AddPost() {
-    const [description, setDescription] = useState("")
+    const [text, setText] = useState("")
     const [file, setFile] = useState(null)
 
     function generateUniqueFileName(file) {
