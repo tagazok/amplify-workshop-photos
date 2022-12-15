@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.amplify-collection-items {
+  align-items: center !important;
+  gap: 1px !important;
+}
