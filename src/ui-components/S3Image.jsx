@@ -15,7 +15,8 @@ export default function S3Image(props) {
         padding: "0px",
         objectFit: "cover",
         boxSizing: "content-box",
-        maxWidth: "100%"
+        maxWidth: "100%",
+        width: "100%"
     }
     const [url, setUrl] = useState("");
 
@@ -25,9 +26,7 @@ export default function S3Image(props) {
         console.log(error);
     });
 
-    return (
-        <div>
-            {(() => {
+    return ((() => {
                 if (props.id) {
                     return <img
                         style={style}
@@ -35,7 +34,6 @@ export default function S3Image(props) {
                         alt="Image attached to post"
                     />;
                 }
-            })()}
-        </div>
+            })()
     );
 };
