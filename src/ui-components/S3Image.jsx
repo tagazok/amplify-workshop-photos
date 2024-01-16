@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Storage } from "aws-amplify";
+import { getUrl } from "aws-amplify";
 
 export default function S3Image(props) {
 
@@ -20,8 +20,9 @@ export default function S3Image(props) {
     }
     const [url, setUrl] = useState("");
 
-    Storage.get(props.id).then(res => {
-        setUrl(res);
+    getUrl({key: props.id}).then(res => {
+        console.log(`props.id: ${props.id}`);
+        setUrl(res.url.toString());
     }).catch(error => {
         console.log(error);
     });

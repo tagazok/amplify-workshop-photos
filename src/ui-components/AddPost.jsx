@@ -1,7 +1,8 @@
 import { useState } from "react"
-import { Storage } from "aws-amplify";
+import { uploadData } from 'aws-amplify/storage';
 import { v4 as uuidv4 } from 'uuid';
 import { TextAreaField, Button } from '@aws-amplify/ui-react';
+import { generateClient } from "aws-amplify/api";
 import './AddPost.css';
 
 export default function AddPost() {
