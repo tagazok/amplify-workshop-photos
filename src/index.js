@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import AddPost from './ui-components/AddPost';
-import '@aws-amplify/ui-react/styles.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
