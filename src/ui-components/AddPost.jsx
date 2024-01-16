@@ -9,7 +9,7 @@ export default function AddPost() {
     const [text, setText] = useState("")
     const [file, setFile] = useState(null)
 
-    function generateUniqueFileName(file) {
+    function generateUniqueFileName() {
         const extension = file.name.split('.').splice(-1, 1)[0];
 
         return `${uuidv4()}.${extension}`;
