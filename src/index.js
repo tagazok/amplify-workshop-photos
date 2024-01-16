@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import AddPost from './ui-components/AddPost';
+import { StorageImage } from '@aws-amplify/ui-react-storage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
